@@ -574,38 +574,38 @@
         });
 
         // Contact form submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
+        // const contactForm = document.getElementById('contactForm');
+        // contactForm.addEventListener('submit', (e) => {
+        //     e.preventDefault();
 
-            // Create success message
-            const successMsg = document.createElement('div');
-            successMsg.style.position = 'fixed';
-            successMsg.style.top = '50%';
-            successMsg.style.left = '50%';
-            successMsg.style.transform = 'translate(-50%, -50%)';
-            successMsg.style.background = '#2ecc71';
-            successMsg.style.color = 'white';
-            successMsg.style.padding = '20px 40px';
-            successMsg.style.borderRadius = '5px';
-            successMsg.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
-            successMsg.style.zIndex = '9999';
-            successMsg.textContent = 'Your message has been sent successfully!';
+        //     // Create success message
+        //     const successMsg = document.createElement('div');
+        //     successMsg.style.position = 'fixed';
+        //     successMsg.style.top = '50%';
+        //     successMsg.style.left = '50%';
+        //     successMsg.style.transform = 'translate(-50%, -50%)';
+        //     successMsg.style.background = '#2ecc71';
+        //     successMsg.style.color = 'white';
+        //     successMsg.style.padding = '20px 40px';
+        //     successMsg.style.borderRadius = '5px';
+        //     successMsg.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
+        //     successMsg.style.zIndex = '9999';
+        //     successMsg.textContent = 'Your message has been sent successfully!';
 
-            document.body.appendChild(successMsg);
+        //     document.body.appendChild(successMsg);
 
-            // Reset form
-            contactForm.reset();
+        //     // Reset form
+        //     contactForm.reset();
 
-            // Remove success message after 3 seconds
-            setTimeout(() => {
-                successMsg.style.opacity = '0';
-                successMsg.style.transition = 'opacity 0.5s ease';
-                setTimeout(() => {
-                    document.body.removeChild(successMsg);
-                }, 500);
-            }, 3000);
-        });
+        //     // Remove success message after 3 seconds
+        //     setTimeout(() => {
+        //         successMsg.style.opacity = '0';
+        //         successMsg.style.transition = 'opacity 0.5s ease';
+        //         setTimeout(() => {
+        //             document.body.removeChild(successMsg);
+        //         }, 500);
+        //     }, 3000);
+        // });
 
         // Add transition styles to portfolio items
         portfolioItems.forEach(item => {
