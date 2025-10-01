@@ -83,7 +83,17 @@
             </div>
             <div class="about-container fade-in">
                 <div class="about-image">
-                    <img src="https://picsum.photos/seed/profile/500/600.jpg" alt="Profile" class="about-img">
+                    <div class="about-slideshow">
+                        <img id="about-img" src="assets/face_1.jpg" alt="Profile" class="about-img">
+                    </div>
+                    <script>
+                        const images = ["assets/face_1.jpg", "assets/face_2.jpg"];
+                        let currentImg = 1;
+                        setInterval(() => {
+                            currentImg = (currentImg + 1) % images.length;
+                            document.getElementById('about-img').src = images[currentImg];
+                        }, 3000);
+                    </script>
                 </div>
                 <div class="about-content">
                     <h3>Professional Software Engineer (Flutter, Golang, React, NextJS)</h3>
@@ -195,7 +205,6 @@
                             real-world applications.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -416,7 +425,7 @@
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fas fa-phone"></i></div>
                         <p class="contact-text">+44 778 027 2816</p>
-                        <p class="contact-text">+234 703 738 2583</p>
+                        <p class="contact-text">+234 706 930 9868</p>
                     </div>
                 </div>
             </div>
