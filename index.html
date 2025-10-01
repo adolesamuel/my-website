@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
@@ -30,6 +31,7 @@
             </div>
         </div>
     </nav>
+    
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -37,7 +39,18 @@
             <div class="hero-content">
                 <p class="hero-subtitle">Hello, my name is</p>
                 <h1 class="hero-title">Samuel Adole</h1>
-                <p class="hero-text">I'm a Professional Software Engineer with 6+ years of experience</p>
+                <p class="hero-text">
+                    I'm a Professional Software Engineer (Flutter, Golang, React, NextJs) with 
+                    <span id="experience-years"></span>+ years of experience
+                </p>
+                <script>
+                    // Calculate years of experience since 2019
+                    const startYear = 2019;
+                    const currentYear = new Date().getFullYear();
+                    const years = currentYear - startYear + 1;
+                    document.getElementById('experience-years').textContent = years;
+                    document.getElementById('experience-years-about').textContent = years;
+                </script>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Contact Me</a>
                     <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
@@ -45,11 +58,11 @@
             </div>
         </div>
         <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a style="padding-top: 2px;" href="https://client.andela.com/talent/profile/a51f7c9c-db94-4e8e-b641-ae85e4cb8d4c?_ga=2.139310131.1896852357.1759344752-614791769.1747334423" class="social-link" target="_blank" rel="noopener"><i class="fab fa-andela-f"><img src="assets/andela.svg" alt="" height="26px" width="26px"/></i></a>
+            <a href="https://x.com/adolesan_" class="social-link"  target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/adole-samuel" class="social-link"  target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/adolesan" class="social-link"  target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/adolesamuel" class="social-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
         </div>
     </section>
 
@@ -65,25 +78,22 @@
                     <img src="https://picsum.photos/seed/profile/500/600.jpg" alt="Profile" class="about-img">
                 </div>
                 <div class="about-content">
-                    <h3>Professional Web Developer & UI/UX Designer</h3>
-                    <p class="about-text">I'm John Doe, a passionate web developer with over 5 years of experience in creating beautiful, functional, and user-centered digital experiences. I am always looking for new and innovative ways to bring my clients' visions to life.</p>
-                    <p class="about-text">My expertise lies in front-end development, with a strong focus on responsive design and user experience. I'm proficient in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js.</p>
+                    <h3>Professional Software Engineer (Flutter, Golang, React, NextJS)</h3>
+                    <p class="about-text">I'm Samuel Adole, a passionate sofware engineer with over <span id="experience-years-about"></span>+ years of experience in creating beautiful, functional, and user-centered digital experiences. I am always looking for new and innovative ways to bring my clients' visions to life.</p>
+                    <script>
+                        // Calculate years of experience since 2019
+                        document.getElementById('experience-years-about').textContent = years;
+                    </script>
+                    <p class="about-text">My expertise lies in front and backend development, with a strong focus on responsive design and user experience. On mobile, I'm skilled with Flutter on Mobile, Golang & Node on Backend, HTML, CSS, JavaScript, Typescript, and frameworks like React and NextJs for Web.</p>
+                    
                     <div class="about-info">
                         <div class="info-item">
                             <span class="info-label">Name:</span>
-                            <span class="info-value">John Doe</span>
+                            <span class="info-value">Samuel Adole</span>
                         </div>
                         <div class="info-item">
                             <span class="info-label">Email:</span>
-                            <span class="info-value">john@example.com</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Age:</span>
-                            <span class="info-value">28</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">From:</span>
-                            <span class="info-value">New York, USA</span>
+                            <span class="info-value">adolesamuel4@gmail.com</span>
                         </div>
                     </div>
                 </div>
@@ -99,36 +109,61 @@
                 <h2 class="section-heading">Resume</h2>
             </div>
             <div class="resume-container fade-in">
+                 <div class="resume-column">
+                    <h3 class="resume-heading">Experience</h3>
+                    <div class="resume-item">
+                        <p class="resume-date">2023 - Present</p>
+                        <h4 class="resume-title">Co-Founder, Lead Mobile Engineer (Flutter), Senior Web Engineer (NextJs)</h4>
+                        <p class="resume-place">Outt Technologies</p>
+                        <p class="resume-text">Contributor to the development and maintenance of the Faramove, Roppi suite of mobile applications using Flutter, collaborating with cross-functional teams to deliver high-quality software solutions.</p>
+                    </div>
+                    <div class="resume-item">
+                        <p class="resume-date">2023 - Present</p>
+                        <h4 class="resume-title">Senior Mobile Engineer (Flutter)</h4>
+                        <p class="resume-place">Faramove Technologies</p>
+                        <p class="resume-text">Contributor to the development and maintenance of the Faramove, Roppi suite of mobile applications using Flutter, collaborating with cross-functional teams to deliver high-quality software solutions.</p>
+                    </div>
+                    <div class="resume-item">
+                        <p class="resume-date">2022 - 2023</p>
+                        <h4 class="resume-title">Mobile Engineer</h4>
+                        <p class="resume-place">Sendme (YC)</p>
+                        <p class="resume-text">Worked as a Mobile Engineer building and maintaining Sendme's mobile applications using Flutter. Collaborated with product, design, and backend teams to deliver new features, improve performance, and ensure a seamless user experience for thousands of users.</p>
+                    </div>
+                    <div class="resume-item">
+                        <p class="resume-date">2021 - 2022</p>
+                        <h4 class="resume-title">Mobile Engineer</h4>
+                        <p class="resume-place">WOCA (Wowcatholic)</p>
+                        <p class="resume-text">Handled mobile development processes for a media, entertainment, and technology company that specializes in providing the required technology solutions to religious institutions.</p>
+                    </div>
+                    <div class="resume-item">
+                        <p class="resume-date">2019 - 2021</p>
+                        <h4 class="resume-title">Frontend Engineer</h4>
+                        <p class="resume-place">OnCode Crypto</p>
+                        <p class="resume-text">Worked as a Frontend Engineer building and maintaining OnCode's web applications using React(Typescript). Collaborated with product, design, and backend teams to deliver new features, improve performance, and ensure a seamless user experience for thousands of users.</p>
+                    </div>
+                    <div class="resume-item">
+                        <p class="resume-date">2017 - 2018</p>
+                        <h4 class="resume-title">Junior Frontend Engineer (Andela Fellow)</h4>
+                        <p class="resume-place">Andela</p>
+                        <p class="resume-text">Brief stint as a Junior Engineer with Andela </p>
+                    </div>
+                </div>
                 <div class="resume-column">
                     <h3 class="resume-heading">Education</h3>
                     <div class="resume-item">
-                        <p class="resume-date">2014 - 2018</p>
-                        <h4 class="resume-title">Bachelor of Computer Science</h4>
-                        <p class="resume-place">New York University</p>
-                        <p class="resume-text">Graduated with honors, specializing in Web Development and User Experience Design.</p>
+                        <p class="resume-date">2009 - 2015</p>
+                        <h4 class="resume-title">Bachelor of Petroleum Engineering</h4>
+                        <p class="resume-place">University of Ibadan</p>
+                        <p class="resume-text">Graduated with honors, specializing in drilling engineering and reservoir management.</p>
                     </div>
                     <div class="resume-item">
                         <p class="resume-date">2018 - 2019</p>
-                        <h4 class="resume-title">Web Development Bootcamp</h4>
-                        <p class="resume-place">Tech Academy</p>
-                        <p class="resume-text">Intensive program covering modern web development technologies and best practices.</p>
+                        <h4 class="resume-title">Renewable Energy Systems Technology</h4>
+                        <p class="resume-place">Centre for Renewable Energy Systems Technology (CREST) Loughborough University</p>
+                        <p class="resume-text">Conducted research on renewable energy technologies, focusing on solar and wind power integration, energy storage solutions, and sustainable system design. Developed practical skills in evaluating and implementing clean energy systems for real-world applications.</p>
                     </div>
                 </div>
-                <div class="resume-column">
-                    <h3 class="resume-heading">Experience</h3>
-                    <div class="resume-item">
-                        <p class="resume-date">2019 - Present</p>
-                        <h4 class="resume-title">Senior Web Developer</h4>
-                        <p class="resume-place">Tech Solutions Inc.</p>
-                        <p class="resume-text">Lead developer for multiple client projects, implementing responsive designs and optimizing performance.</p>
-                    </div>
-                    <div class="resume-item">
-                        <p class="resume-date">2018 - 2019</p>
-                        <h4 class="resume-title">Junior Web Developer</h4>
-                        <p class="resume-place">Digital Agency</p>
-                        <p class="resume-text">Developed and maintained websites for various clients, focusing on front-end technologies.</p>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </section>
